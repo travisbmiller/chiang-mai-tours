@@ -2,7 +2,7 @@
   remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*", "https://media.cnn.com/.*", "https://shippedaway.com/.*", "https://images.pexels.com/.*"]
 
 [build]
-  command = "npm install && npm run build"
+  command = "npm install --legacy-peer-deps && npm run build"
   # Don't specify publish directory - @netlify/plugin-nextjs handles this automatically for Next.js 15
 
 [build.environment]
