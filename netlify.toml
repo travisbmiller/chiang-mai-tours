@@ -1,17 +1,14 @@
-[images]
-  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*", "https://media.cnn.com/.*", "https://shippedaway.com/.*", "https://images.pexels.com/.*"]
-
 [build]
   command = "npm ci && npm run build"
-  # Don't specify publish directory - @netlify/plugin-nextjs handles this automatically for Next.js 15
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20"
-  # Set to production for optimal builds
   NODE_ENV = "production"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
 # Environment variables needed (configure in Netlify UI under Site settings > Environment variables):
+# - RESEND_API_KEY: Your Resend API key for sending booking emails
 # - RESEND_API_KEY: Your Resend API key for sending booking emails
