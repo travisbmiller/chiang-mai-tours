@@ -1,0 +1,210 @@
+# Project Todos
+
+## Current Tasks 🎯
+- **ACTIVE: Enhance WhatsApp message template** - Include selected booking details
+  - Add selected date to WhatsApp message if date is chosen
+  - Include number of adults selected
+  - Account for Morning Monk Alms add-on selection
+  - Create comprehensive booking message template
+
+## Current Status ✅
+- **COMPLETED: YouTube video section - Left as is for now** - Issue with iframe embedding ✅
+  - Attempted multiple embedding methods but iframe blocked in current environment
+  - Video section exists with correct video URL: https://www.youtube.com/watch?v=FDBonx6Qh8I
+  - User decided to leave video embedding issue for later
+  - Experience the Journey section remains functional
+- **COMPLETED: Updated YouTube video and fixed Our Tours position** - Content and layout fixes ✅
+  - Updated "Experience the Journey" YouTube video from zEFNqLQFxzE to FDBonx6Qh8I
+  - Moved "Our Tours" section back to its original position after main content section
+  - "Our Tours" now appears before "Reviews from guests" and "Happy Travelers" sections
+  - Fixed section ordering to match original layout structure
+  - Proper section flow: Main Content → Our Tours → Reviews → Happy Travelers → Footer
+- **COMPLETED: Fixed header font styling only** - Matched font styling without layout changes ✅
+  - Reverted layout changes that incorrectly moved sections into main content column
+  - Confirmed all three headers use identical styling: "text-2xl font-bold text-gray-900 mb-6"
+  - "Good to Know", "Reviews from guests", and "Happy Travelers" now have matching header styles
+  - Preserved original layout structure as requested
+  - Only changed font styling, not layout positioning
+- **COMPLETED: Removed infinite scroll and show all images** - Simplified gallery experience ✅
+  - Removed infinite scroll functionality and show all 20 images at once
+  - Removed loading states, skeleton animations, and scroll event listeners
+  - Removed loading indicators and end-of-gallery messages
+  - Kept lazy loading (loading="lazy" and decoding="async") for performance optimization
+  - Simplified component state management by removing unnecessary state variables
+  - Clean, straightforward gallery experience for immediate browsing
+- **COMPLETED: Removed drop shadow from gallery images** - Clean visual styling ✅
+  - Removed shadow-md class from all gallery images for flat, clean appearance
+  - Removed shadow-md class from skeleton loading placeholders
+  - Gallery images now have minimal styling with only small corner radius
+  - Simplified visual design for cleaner, more modern gallery appearance
+- **COMPLETED: Implemented infinite scroll with loading skeletons** - Enhanced gallery UX ✅
+  - Replaced Show More button with infinite scroll functionality that triggers 1000px from bottom
+  - Added subtle loading skeleton animations with varying heights (h-60, h-72, h-80)
+  - Implemented proper lazy loading optimization with loading="lazy" and decoding="async"
+  - Added scroll event listeners and loading state management with React useState
+  - Created smooth skeleton transitions with staggered animation delays
+  - Fixed React hooks exhaustive-deps warning with useCallback optimization
+  - Added bouncing dots loading indicator while fetching new images
+  - Added end-of-gallery message when all 20 images are loaded
+  - Enhanced performance with proper dependency management
+- **COMPLETED: Removed hover effects from gallery images** - Simplified gallery interaction ✅
+  - Removed hover shadow effects (hover:shadow-lg) from all gallery images
+  - Removed hover scale transformation (hover:scale-[1.02]) from all gallery images
+  - Removed transition animations from gallery images for static viewing
+  - Gallery images now remain completely static without hover interactions
+  - Simplified gallery for cleaner, more focused viewing experience
+- **COMPLETED: Applied small corner radius to gallery images** - Subtle visual refinement ✅
+  - Changed gallery images from rounded-lg to rounded for smaller, more subtle corner radius
+  - Maintained consistent styling across all 20 gallery images
+  - Preserved all hover effects and smooth transitions
+  - Enhanced visual balance in masonry layout with softer edges
+- **COMPLETED: Enhanced image gallery with dynamic loading** - Improved responsive layout and functionality ✅
+  - Updated responsive column layout: 2 mobile, 3 tablet, 4 large tablet, 5 large screens
+  - Made "Show More Images" button functional to load 10 additional photos dynamically
+  - Added smooth fade-in-up animations for new images with staggered timing delays
+  - Implemented React state management for dynamic image loading
+  - Enhanced hover effects with subtle scale transformation and shadow increase
+  - Added remaining count display on Show More button for better UX
+  - Button automatically hides when all 20 images are loaded
+  - Added custom CSS animations in globals.css for smooth image transitions
+- **COMPLETED: Refined image gallery styling and layout** - Improved mobile experience and header consistency ✅
+  - Removed descriptive text under "Happy Travelers" header for cleaner design
+  - Updated "Happy Travelers" header styling to match other section headers (text-2xl font-bold text-gray-900 mb-6)
+  - Changed mobile layout from 1 column to 2 columns for better mobile UX
+  - Left-aligned header to match site consistency
+  - Mobile users can now see more images without excessive scrolling
+- **COMPLETED: Fixed image loading issues in masonry gallery** - All images now working ✅
+  - Replaced all Unsplash URLs with reliable Pexels image links
+  - Fixed all 10 images to load properly in masonry layout
+  - Maintained diverse travel photos with different aspect ratios
+  - Gallery displays with consistent spacing and hover effects
+- **COMPLETED: Created masonry-style image gallery** - Flexible layout with travel photos ✅
+  - Added responsive masonry gallery below Reviews section using CSS columns
+  - Implemented 10 stock images of diverse travelers with different aspect ratios
+  - Added consistent spacing and hover effects for all images
+  - Created "Show More Images" button below gallery
+  - Used break-inside-avoid for proper masonry flow
+  - All images loading correctly with Pexels URLs
+- **COMPLETED: Maintained two-column layout on mobile for tour details grid** - Better mobile space utilization ✅
+  - Changed tour details grid from single column to two columns on mobile
+  - Modified grid from 'grid-cols-1 md:grid-cols-2' to 'grid-cols-2'
+  - Optimized mobile spacing with smaller gap (gap-4) and larger desktop gap (md:gap-6)
+  - Improved mobile space utilization in "This is the plan" section
+  - Better mobile layout for Destination, Duration, Transport mode, and Available languages
+- **COMPLETED: Removed badge elements from Not Included section** - Simplified design ✅
+  - Removed "Cost estimate" badge from Meals & Snacks item
+  - Removed "Additional costs" badge from Entrance Fees item
+  - Removed "Must bring" badge from Temple Wear item
+  - Simplified Not Included section design by removing extra visual elements
+  - Kept original text content while cleaning up the visual design
+  - Maintained clean, focused design in the Not Included section
+- **COMPLETED: Increased mobile booking input and button sizes** - Better mobile touch interaction ✅
+  - Increased DatePicker height from h-12 to h-14 on mobile (desktop stays h-11)
+  - Increased Select dropdown height from h-12 to h-14 on mobile (desktop stays h-11)
+  - Increased Morning Monk Alms container from h-11 to h-14 on mobile (desktop stays h-11)
+  - Increased Request Booking button height from h-11 to h-14 on mobile (desktop stays h-11)
+  - Increased floating footer button padding from py-3 to py-4 on mobile
+  - Better touch targets and accessibility for mobile users of all ages
+  - Desktop experience remains unchanged for consistency
+- **COMPLETED: Improved mobile font sizes for better readability across all ages** - Enhanced accessibility ✅
+  - Increased mobile font sizes while keeping original desktop sizes unchanged
+  - Main title: text-3xl for both mobile and desktop (better readability)
+  - Section headings: restored to text-2xl for better mobile reading
+  - Tour highlight headings: text-2xl for both mobile and desktop
+  - Subsection headings: restored to text-lg for better accessibility
+  - Body text: restored to text-base for easier mobile reading
+  - Badge text: kept at text-sm for better mobile visibility
+  - Better accessibility and readability for users of all ages on mobile devices
+- **COMPLETED: Optimized mobile font sizes for better UX** - Enhanced mobile readability ✅
+  - Reduced main title from text-3xl to text-2xl md:text-3xl for better mobile fit
+  - Optimized all major section headings from text-2xl to text-xl md:text-2xl on mobile
+  - Adjusted large headings (Our tours) from text-4xl to text-2xl md:text-4xl
+  - Made subsection headings more readable: text-lg to text-base md:text-lg on mobile
+  - Optimized body text in key sections for mobile readability (text-sm md:text-base)
+  - Reduced badge text from text-sm to text-xs md:text-sm for mobile
+  - Improved overall mobile typography hierarchy and scanning experience
+- **COMPLETED: Applied consistent badge styling to all cost sections** - Unified important information design ✅
+  - Added "Important to know" badges to Morning Monk Alms cost section (Additional Cost & Tour Surcharge)
+  - Added badge to entrance fees note in "This is the plan" section
+  - Added "Cost estimate" badge to Meals & Snacks in "Not Included" section
+  - Added "Additional costs" badge to Entrance Fees in "Not Included" section
+  - Added "Must bring" badge to Temple Wear requirements in "Not Included" section
+  - Consistent red color scheme and styling across all important cost and requirement information
+  - Improved visual hierarchy for financial planning and preparation needs
+- **COMPLETED: Added "Important to know" badge for dress code requirements** - Better visual emphasis ✅
+  - Created visual design element similar to "No Rushing" badge for temple clothing requirements
+  - Used red/warning color scheme (bg-red-50, text-red-700, border-red-200) to draw attention
+  - Added red dot indicator and consistent badge styling throughout
+  - Applied to Wat Phra That Doi Suthep, Bhubing Palace, and Phalat Temple sections
+  - Helps users quickly identify important dress code information
+- **COMPLETED: Improved mobile layout for Additional Highlight badge** - Better mobile UX ✅
+  - Moved "Additional Highlight" badge to appear below "Morning Monk Alms" title on mobile
+  - Added responsive flex direction: flex-col on mobile, flex-row on desktop
+  - Better mobile readability and layout in Morning Monk Alms section
+  - Added w-fit class to badge for proper mobile sizing
+- **COMPLETED: Updated Morning Monk Alms pricing** - Simplified cost information ✅
+  - Changed additional cost from "80-100 Baht" to "100 Baht" per person
+  - Simplified pricing information for better clarity
+  - Updated in Morning Monk Alms section content
+- **COMPLETED: Added "Learn more" hover tooltip to help icon** - Better user guidance ✅
+  - Added hover tooltip that appears when user hovers over "?" icon in booking area
+  - Tooltip shows "Learn more" text with smooth fade animation
+  - Small, dark popup positioned above the help icon with arrow pointer
+  - Clean CSS-only hover implementation with group hover states
+  - Provides clear guidance about Morning Monk Alms feature functionality
+
+## ✅ Recently Fixed
+- ✅ Smooth desktop scroll - no more flicking on each scroll wheel event
+- ✅ Progress bar sequence logic - clicking any bar starts correct sequence from that image
+- ✅ Stale state in auto-play timer preventing correct sequence
+- ✅ JSX parsing error in page.tsx preventing dev server startup
+- ✅ Build error resolved - application now loads properly
+- ✅ All image sliders functioning with auto-play and progress indicators
+
+## Completed ✅
+- ✅ Fixed sticky booking sidebar scroll behavior
+- ✅ Applied Airbnb pink styling to all booking buttons
+- ✅ Removed date requirement and error messages from booking
+- ✅ Added Morning Monk Alms checkbox option
+- ✅ Removed fade-up effects from text areas
+- ✅ Replaced large carousel arrows with small icons and dots
+- ✅ Restructured HTML to separate main content and "Our tours" sections
+- ✅ Restored full-width hero section at top of page
+- ✅ Changed reviews section from two-column to single-column format
+- ✅ Changed hero image format to responsive: max-width on desktop, full-width on mobile
+- ✅ Updated Tour Highlights image carousels with compact navigation and 3:2 aspect ratio
+- ✅ Added swipe and scroll functionality to Tour Highlights carousels
+- ✅ Added auto-play functionality with no hover effects and matching corner radius
+- ✅ Fixed scroll interference issue (removed mouse wheel navigation)
+- ✅ Added viewport-triggered auto-play and fade transition effects
+- ✅ Implemented ultra-smooth image transitions with cross-fade effects
+- ✅ Simplified to clean slide transitions based on navigation direction
+- ✅ Fixed ribbon slider math and added directional fade transitions
+- ✅ Implemented true infinite ribbon slider with seamless looping
+- ✅ Fixed infinite slider to eliminate all visual direction changes
+- ✅ Slowed auto-play to 3 seconds and added desktop/mobile swiping
+- ✅ Removed modal functionality - images are no longer clickable
+- ✅ Replaced desktop click-and-drag with horizontal scroll navigation
+- ✅ Fixed problematic scroll logic causing gray background issue
+- ✅ Implemented proper scroll area with hidden scrollbars for reliable desktop navigation
+- ✅ Fixed all remaining issues: corner radius, scroll functionality, and browser navigation prevention
+- ✅ Implemented withlocals.com style scroll-triggered ribbon slider
+- ✅ Fixed scroll container issues preventing page scrolling interference
+- ✅ **Implemented multi-segment auto-play progress indicator**
+
+## Latest Features 🚀
+- **Segmented Progress Visualization**: One progress segment per image in slider
+- **Real-Time Countdown**: Current segment fills during 3-second auto-play timer
+- **Clear Visual States**: Completed (filled), current (filling), future (empty) segments
+- **Smart Display Logic**: Only shows during active auto-play (not when paused/scrolling)
+- **Transparent Bottom Overlay**: Subtle indicator that doesn't interfere with image viewing
+- **Scroll Progress Separate**: Scroll-triggered progress indicator still works independently
+- **Auto-Reset Functionality**: Progress automatically resets for each new cycle
+- **Smooth Animation**: Updates every 50ms for fluid progress visualization
+
+## User Experience Benefits 📈
+- Users can instantly see how many images are in each Tour Highlights section
+- Clear visual feedback shows when the next image will appear
+- No confusion about slider state - progress is always visible and accurate
+- Professional polish matching high-end travel booking platforms
+- Perfect combination of scroll-triggered navigation + auto-play with visual feedback
