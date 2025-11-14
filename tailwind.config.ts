@@ -78,6 +78,15 @@ export default {
         '2xl': '1536px',
       },
       },
+      gridTemplateColumns: {
+        'main': '1fr',
+        'main-sidebar': '1fr 400px',
+        'main-sidebar-lg': '2fr 1fr',
+        '12': 'repeat(12, minmax(0, 1fr))',
+      },
+      maxWidth: {
+        'site': '1120px',
+      },
       keyframes: {
         'fade-up': {
           '0%': { opacity: '0', transform: 'translateY(20px)' },

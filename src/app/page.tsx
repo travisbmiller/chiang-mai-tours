@@ -701,7 +701,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="border-b border-gray-200 bg-white z-50">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{maxWidth: '1120px'}}>
+        <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-rose-500 rounded-full flex items-center justify-center">
@@ -871,7 +871,7 @@ export default function Home() {
       {/* Main Content - Fade Up Animation */}
       <div className="animate-fade-up">
       <div className="hidden bg-gray-50 py-2">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{maxWidth: '1120px'}}>
+        <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-2 text-sm text-gray-500">
             {breadcrumbMap[currentSection as keyof typeof breadcrumbMap]?.map((crumb, index, arr) => (
               <div key={index} className="flex items-center space-x-2">
@@ -893,7 +893,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-2" style={{maxWidth: '1120px'}}>
+      <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8 pt-12 pb-2">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
           <h1 className="text-center lg:text-left">
             <div className={`text-lg md:text-3xl text-[#000000] font-semibold ${dmSans.className}`} style={{lineHeight: 0, fontWeight: 600}}>Discover the Magic of</div>
@@ -929,7 +929,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div ref={heroImageRef} className="w-full mx-auto px-0 md:px-4 md:sm:px-6 md:lg:px-8 md:mt-2" style={{maxWidth: '1120px'}}>
+      <div ref={heroImageRef} className="w-full mx-auto max-w-site px-0 md:px-4 md:sm:px-6 md:lg:px-8 md:mt-2">
         <HeroCollage
           images={heroImages}
           totalImageCount={allTourImages.length}
@@ -937,8 +937,8 @@ export default function Home() {
         />
       </div>
 
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-8 relative" style={{maxWidth: '1120px'}}>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8 pt-8 pb-8 relative">
+        <div className="grid grid-cols-1 lg:grid-cols-main-sidebar-lg gap-8">
           <div className="lg:col-span-2 space-y-8">
             <div className="pb-6">
               <h2 className="text-2xl font-bold text-[#000000] mb-6">Description</h2>
@@ -2324,7 +2324,7 @@ export default function Home() {
 
       <div ref={ourToursRef} className="relative w-full">
         <div className="bg-gray-100 py-16">
-          <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{maxWidth: '1120px'}}>
+          <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8">
                   <div className="flex justify-between items-start mb-8">
                     <div>
                       <h2 className="text-4xl md:text-5xl font-bold text-[#000000] mb-6">Our tours</h2>
@@ -2348,7 +2348,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{maxWidth: '1120px'}}>
+                <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8">
                   <div className="flex justify-center items-center mt-4 space-x-4">
                     <button
                       onClick={scrollLeft}
@@ -2374,7 +2374,7 @@ export default function Home() {
               </div>
             </div>
 
-      <div ref={galleryRef} className="mx-auto px-4 sm:px-6 lg:px-8 pb-24 md:pb-16" style={{maxWidth: '1120px'}}>
+      <div ref={galleryRef} className="mx-auto max-w-site px-4 sm:px-6 lg:px-8 pb-24 md:pb-16">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-[#000000] mb-6">Happy travelers</h2>
         </div>
@@ -2421,7 +2421,7 @@ export default function Home() {
       </div>
 
       <footer className="bg-gray-100 text-[#000000] border-t border-gray-200 shadow-sm">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12" style={{maxWidth: '1120px'}}>
+        <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4 text-[#000000]">Private Tours</h3>
