@@ -1,0 +1,517 @@
+<div className={`overflow-hidden transition-all duration-500 ${isFAQExpanded ? 'max-h-[20000px] opacity-100 mt-6' : 'max-h-0 opacity-0'}`}>
+              <div className="space-y-8">
+                {/* Booking & Scheduling Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Booking & Scheduling</h3>
+
+                  {/* FAQ 1 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq1')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What time does the tour start?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq1') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq1') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        We offer flexible starting times to suit your schedule. Most guests prefer to start early in the morning (around 8-9 AM) to avoid the midday heat and crowds. If you'd like to catch the sunrise at Doi Suthep, we can arrange a very early pickup. Just let me know your preferred time when booking, and I'll make it work.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 2 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq2')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Where do you pick me up?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq2') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq2') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        I'll pick you up directly from your hotel or accommodation in Chiang Mai. If you're staying outside the city center (more than 10km from Old City), please contact me when booking to confirm pickup availability. I'll confirm your exact pickup time and location once your booking is confirmed.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 3 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq3')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">How long is the tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq3') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq3') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        The typical tour duration is 4-6 hours, depending on how much time you'd like to spend at each location. Because this is a private tour, we can adjust the pace to match your preferences. If you want to spend more time at Doi Suthep or linger at the viewpoints for photos, that's completely fine. If you add the Morning Monk Alms ceremony, plan for an additional 1-1.5 hours.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 4 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq4')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Do I need to pay a deposit?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq4') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq4') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        No deposit is required. Payment is due at the end of the tour. You can pay in cash (Thai Baht preferred) or via bank transfer. I accept payment in USD, EUR, or other major currencies as well, though the exchange rate may vary slightly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tour Details Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Tour Details</h3>
+
+                  {/* FAQ 5 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq5')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Is this really a private tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq5') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq5') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Yes! This is a completely private tour. It will be just you, your group, and me as your driver. No other tourists will join. You'll have a dedicated vehicle and the freedom to customize the itinerary, take your time at each stop, and travel at your own pace.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 6 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq6')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What's the difference between a driver and a licensed guide?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq6') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq6') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        I'm an English-speaking driver who knows Chiang Mai very well and can share local stories, cultural insights, and practical tips. A licensed professional guide has formal training in history and culture and can provide in-depth commentary at each site. If you'd like a licensed guide to join us, I can arrange that for 1,000-1,500 Baht.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 7 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq7')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">How many steps are there at Doi Suthep?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq7') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq7') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        There are 306 steps from the parking area up to the golden temple. However, there's also a cable car (tram) available for 50 Baht if you prefer not to climb the stairs. The cable car is quick, convenient, and runs frequently throughout the day.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 8 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq8')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Is this tour suitable for elderly people or people with mobility issues?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq8') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq8') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        The tour can be adjusted to accommodate elderly guests or those with mobility concerns. The cable car at Doi Suthep eliminates the need to climb stairs, and most locations are accessible by vehicle. Please let me know about any specific needs when booking, and I'll make sure the itinerary works for you.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 9 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq9')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Can children join this tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq9') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq9') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Absolutely! This is a family-friendly tour. Children will enjoy seeing the golden temple, feeding fish at the ponds, and meeting the Hmong village children. Children 12 and under are charged at the same rate. Car seats and booster seats can be provided upon request at no extra charge.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* What to Bring & Wear Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">What to Bring & Wear</h3>
+
+                  {/* FAQ 10 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq10')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What should I wear?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq10') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq10') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Wear lightweight, breathable clothing that covers your shoulders and knees for temple visits. Long pants or a long skirt with a t-shirt or blouse work well. Comfortable walking shoes are essential. You can bring a sarong or scarf to cover up if you want to wear shorts during the drive. Avoid sleeveless tops, short shorts, and revealing clothing.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 11 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq11')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What should I bring on the tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq11') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq11') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        I recommend bringing sunscreen, sunglasses, a hat, your camera or phone, and some cash for optional purchases or the cable car. I'll provide bottled water throughout the tour. If you're doing the Morning Monk Alms, wear something you can easily kneel in.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 12 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq12')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Will I need cash during the tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq12') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq12') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Yes, bring some Thai Baht for optional expenses like the cable car (50 Baht), meals, snacks, souvenirs, or donations at temples. All entrance fees are included in your tour price, so you won't need cash for those. ATMs are available in Chiang Mai if needed before the tour.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Weather & Best Time Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Weather & Best Time</h3>
+
+                  {/* FAQ 13 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq13')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What if it rains on my tour day?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq13') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq13') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        The tour runs rain or shine! Most temples have covered areas, and rain often adds a mystical atmosphere to the jungle temple. If there's heavy rain, we can adjust the schedule or wait it out. If you prefer, we can reschedule to another day at no extra charge (subject to availability).
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 14 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq14')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What's the best time of day/year to visit Doi Suthep?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq14') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq14') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Early morning is ideal for avoiding crowds and heat, plus sunrise at the temple is spectacular. The best months are November to February when the weather is cooler and drier. March to May can be hot, and June to October is rainy season (though the greenery is beautiful). Each season has its own charm!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Temple Etiquette & Culture Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Temple Etiquette & Culture</h3>
+
+                  {/* FAQ 15 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq15')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What's the proper etiquette at Buddhist temples?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq15') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq15') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Remove your shoes before entering temple buildings. Dress modestly (shoulders and knees covered). Speak softly and be respectful. Don't point your feet at Buddha images. Women should not touch monks or hand things directly to them. I'll guide you through proper etiquette at each stop, so don't worry!
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 16 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq16')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Can women participate in the Morning Monk Alms?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq16') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq16') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Yes! Women can participate in the alms giving ceremony. When offering food, you'll place it in the monk's bowl without making direct hand contact. I'll show you the proper technique. It's a beautiful and meaningful experience for everyone.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Food & Meals Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Food & Meals</h3>
+
+                  {/* FAQ 17 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq17')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Is lunch included?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq17') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq17') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Meals are not included, but I'm happy to recommend great local restaurants or stop anywhere you'd like. Expect to spend around 100-200 baht per person for a delicious Thai meal. I know all the best spots for authentic Northern Thai cuisine, from street food to sit-down restaurants!
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 18 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq18')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Will there be bathroom stops?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq18') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq18') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Yes, there are clean bathroom facilities at Doi Suthep Temple, Bhubing Palace, and other stops along the way. Just let me know if you need a bathroom break at any time, and I'll find the nearest clean facility. Your comfort is my priority!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Photography Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Photography</h3>
+
+                  {/* FAQ 19 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq19')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Can I take photos at the temples?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq19') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq19') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Yes! Photography is allowed and encouraged at all locations on the tour. The golden temple, viewpoints, and gardens make for stunning photos. Some indoor areas may have photography restrictions, which I'll point out. I'm happy to take photos of you and your group at the best spots!
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 20 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq20')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Will the driver take photos of us?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq20') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq20') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Absolutely! I love taking photos for my guests at the best viewpoints and in front of the golden temple. Just hand me your camera or phone, and I'll make sure you get great memories. I know all the best angles and lighting spots!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Morning Monk Alms Add-On Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Morning Monk Alms Add-On</h3>
+
+                  {/* FAQ 21 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq21')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What exactly is the Morning Monk Alms ceremony?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq21') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq21') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        The Morning Monk Alms (Tak Bat) is a daily Buddhist tradition where monks walk barefoot in single file to collect food offerings from locals. We'll visit a morning market to buy offerings (sticky rice, fruit, snacks), then participate in giving alms to the monks as they pass. It's a peaceful, spiritual experience that dates back to the 14th century.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 22 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq22')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Is the Morning Monk Alms ceremony just for tourists?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq22') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq22') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        No! This is an authentic daily practice that local Thai Buddhists participate in every morning. It's not a tourist show. Visitors are welcome to respectfully join in this meaningful tradition. I'll take you to a local neighborhood where you can experience it authentically alongside Thai residents.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Comparison Questions Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Comparison Questions</h3>
+
+                  {/* FAQ 23 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq23')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What's the difference between this tour and a group tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq23') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq23') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Group tours follow a fixed schedule, make you wait for others, and rush through stops. With my private tour, you have complete flexibility. Want to spend an extra 30 minutes at the viewpoint? No problem. Want to skip Bhubing Palace? That's fine too. You set the pace, and I'll make sure you see what matters most to you.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 24 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq24')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Can I just take a Grab/taxi to Doi Suthep myself?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq24') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq24') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        You could, but you'd miss out on the secret temple, hidden viewpoints, Bhubing Palace, and the Hmong village that most tourists never see. Plus, coordinating multiple taxis is a hassle. With my tour, you'll see all the highlights in one seamless journey, with insider knowledge and local stories you won't find on your own.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Miscellaneous Category */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-[#000000] mb-4">Miscellaneous</h3>
+
+                  {/* FAQ 25 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq25')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Do I need to book in advance?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq25') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq25') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        I recommend booking at least 1-2 days in advance to secure your preferred date and time. During peak season (November-February), booking a week ahead is ideal. However, if you need a last-minute tour, contact me and I'll do my best to accommodate you!
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 26 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq26')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What if I'm traveling solo?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq26') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq26') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Solo travelers are very welcome! The same per-person rate applies. You'll have the entire vehicle to yourself, giving you maximum comfort and flexibility. I've taken many solo travelers on this tour, and they love the personal attention and freedom to explore at their own pace.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 27 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq27')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">Is tipping expected?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq27') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq27') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        Tipping is not required, but it's always appreciated if you enjoyed the tour! A tip of 100-300 Baht is common if you're happy with the service, but there's absolutely no pressure. Your satisfaction and kind words matter most to me.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 28 */}
+                  <div className="border-b border-gray-200 pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq28')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">What if someone in our group doesn't want to do the full tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq28') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq28') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        No problem! Since this is a private tour, we can be flexible. If someone wants to wait in the car while others explore a temple, that's completely fine. We can also customize the itinerary to skip certain stops if they're not interested. The vehicle is air-conditioned and comfortable for waiting.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* FAQ 29 */}
+                  <div className="pb-4">
+                    <button
+                      onClick={() => toggleFAQSection('faq29')}
+                      className="w-full flex items-start justify-between text-left group"
+                    >
+                      <h4 className="text-base font-semibold text-[#000000] pr-4">How do I communicate with you before/during the tour?</h4>
+                      <ChevronDown className={`w-5 h-5 text-[#000000] flex-shrink-0 mt-1 transition-transform duration-300 ${openFAQSections.has('faq29') ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFAQSections.has('faq29') ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
+                      <p className="text-gray-700 leading-relaxed">
+                        I'm available via WhatsApp, LINE messenger, or email. After you book, I'll send you my contact details and confirm all the details of your tour. On the tour day, I'll send you a message when I'm on my way to pick you up. Feel free to message me anytime with questions before or during your visit to Chiang Mai!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
